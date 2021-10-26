@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- 14.17.0
+
+
+
+before_install:
+    - npm update
+
+git:
+   depth: 9999999
+
+deploy:
+    provider: azure_web_apps
+
+    on:
+        branch: main
+    
+    verbose: true

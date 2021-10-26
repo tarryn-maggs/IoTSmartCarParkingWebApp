@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Core Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <!-- Shortcut icon -->
+        <link rel="shortcut icon" type="image/png" href="images/Dude.png"/>
+
+    <title>Dude,WmPS Homepage</title>
+</head>
+
+<body>
+        <div class="bg-light border-bottom">
+            <header class="group-header text-center pt-4">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h1 class="page-header"> Welcome to: Dude, Where's my Parking Space?</h1>
+                        <h3>An Internet of Things smart car parking system</h3>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-12 m-3 p-2">
+
+                <div class="col-4"></div>
+                <!-- parking aid image -->
+                <div class="grid text-center">
+                    <div class="row">
+                        <a class="blog-header-logo text-dark"><img src="images/Dude.png" alt="IoT Parking System"
+                      style="height: 25vw; width: auto;">
+                    </a>
+                    </div>
+                </div>
+
+                <div class="card text-center bg-light m-1 p-1">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id='search-but' href="/search">Search by name</a>
+                    <!-- <a class="list-group-item list-group-item-action list-group-item-light p-3" >Find near me</a> -->
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" id='view-res-but' href='#'>View my reservation/s</a>
+                </div>
+
+                <div id="myReservations"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        <script src="scripts/homepage.js"></script>
+    </body>
+
+</html>

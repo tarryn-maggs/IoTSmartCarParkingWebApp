@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Core Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Core theme CSS -->
+        <link href="css/blog.css" rel="stylesheet" />
+        <link href="css/blog.rtl.css" rel="stylesheet" />
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+        <!-- Shortcut icon -->
+        <link rel="shortcut icon" type="image/png" href="images/Dude.png"/>
+
+        <title>Dude,WmPS SearchPage</title>
+    </head>
+
+    <div class="container">
+        <div class="bg-light border-bottom">
+            <header class="group-header text-center pt-4">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <h1>
+                            Dude, Where's my Parking Space?
+                            <a class="blog-header-logo text-dark"><img src="images/Dude.png" alt="IoT Parking System"
+                                style="height: 7.5vw; width: auto;">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="col-md-2">
+                                <a href="/home" class="btn btn-secondary" id="back-button" data-cy="back-button"><i class="fa fa-arrow-left"></i> Back </a>
+                    </div>
+                </div>
+
+                        <div class="row">
+                            <h2>Search Page</h2>
+                        </div>
+            </header>            
+        </div>
+
+
+        <body class="container">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-md-12 m-3 p-2">
+                    <div class="form">
+                        <div class="mb-3">
+                            <input class="form-control" type="text" id="lot-search"
+                            placeholder="Search for parking lot by name. Will filter automatically." onkeyup="entireLotSearch()"  data-cy='lot-search'>
+                        </div>
+                    </div>
+                    <div class="card text-center bg-light m-1 p-1">
+                        
+                        <table class="table table-hover align-middle" id="find-lot-table" data-cy="lot-table">
+                            <thead>
+                                <th>Parking Lots</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+
+    </div>
+
+    <script src="scripts/searchPage.js"></script>
+    
+  </html>

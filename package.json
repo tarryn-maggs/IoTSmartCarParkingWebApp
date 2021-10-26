@@ -1,0 +1,58 @@
+{
+  "name": "elen4012-project",
+  "version": "1.0.0",
+  "description": "IoT based Smart Car Parking System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: No tests specified\" && exit 0",
+    "start": "node src/server/app.js",
+    "dev": "nodemon src/server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarryn-maggs/IoTSmartParking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarryn-maggs/IoTSmartParking/issues"
+  },
+  "homepage": "https://github.com/tarryn-maggs/IoTSmartParking#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.14.0"
+  },
+  "dependencies": {
+    "@azure/event-hubs": ">=5.0.2",
+    "bootstrap": "^5.1.3",
+    "buffer": "^5.5.0",
+    "cookie": "^0.4.1",
+    "cookies": "^0.8.0",
+    "crypto": "^1.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": ">=18.0.1",
+    "eslint-config-standard": ">=14.1.0",
+    "eslint-plugin-import": ">=2.18.2",
+    "eslint-plugin-jsx-a11y": ">=6.2.3",
+    "eslint-plugin-node": ">=9.2.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-react": ">=7.14.3",
+    "eslint-plugin-standard": ">=4.0.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "minimist": ">=1.2.5",
+    "mssql": "7.1.0",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "rhea-promise": "^1.0.0",
+    "ws": ">=7.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "start-server-and-test": "^1.12.4",
+    "wait-on": "^5.3.0"
+  }
+}

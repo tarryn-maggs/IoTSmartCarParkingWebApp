@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Core Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" type="image/png" href="images/Dude.png"/>
+    
+  <title>Dude,WmPS Parking Lot</title>
+</head>
+
+<body>
+  <!-- Page Title -->
+    <!-- HEADER -->
+    <div class="bg-light border-bottom">
+      <header class="group-header text-center pt-4">
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+
+            <h1 class="page-header"><img src="images/Dude.png" alt="IoT Parking System"
+              style="height: 7.5vw; width: auto;"> View Available Parking Spaces for: <span id="group-name"></span></h1>
+
+          </div>
+          <div class="col-md-2">
+            <a href="/search" class="btn btn-secondary" id="back-button" data-cy="back-button"><i class="fa fa-arrow-left"></i> Back </a>
+          </div>
+          <hr>
+        </div>
+      </header>
+    </div>
+    
+
+  <div class="container">
+
+    <div class="row">
+    <!-- Table indicating availability etc -->
+      <div class="col-md-12 bg-light">
+        <br>
+        <!-- Table placeholder to load the contents of the 'availability' table -->
+        <table class="table table-striped table-bordered" id="availability-table">
+          <tbody id="table-availability-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Reservation Button -->
+    <div class="row">
+      <button id="reservationButton" style='visibility: hidden;'>Reserve this parking space
+      </button>
+      <button id="reservationDeleteButton" style='visibility: hidden;'>Delete my Reservation
+      </button>
+    </div>
+
+    <div class="row">
+        <!-- Table indicating spaces -->
+        <div class="col-md-12 bg-light" style='overflow-x: auto;' >
+          <br>
+          <div class="text-center" id="spaces">
+          </div>
+          <div style='overflow-x: auto;' >
+            <table class="table table-bordered" style= 'width: 100%; border-collapse: collapse; ' id="spaces-table">
+            <tbody id="table-spaces-body"></tbody>
+          </table>
+          </div>
+          <!-- Table placeholder to load the contents of the 'spaces' table -->
+          
+        </div>
+      </div>
+
+  </div>
+
+  <!-- Qs module -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+  integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+  integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Script containing code for parking lot functionality -->
+  <script src="scripts/parkingLot.js"></script>
+
+</body>
+
+</html>
